@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Ecommerce regression suite" verbose="1" 
+	thread-count="3" parallel="tests"> 
+<listeners>	
+		<listener class-name="com.qa.testlisteners.ExtentReportListener" />
+	</listeners>
+<test name="Ecommerce DressesPage">
+<classes>
+ <class name="com.qa.tests.DressesPageTest"> 
+ <methods>
+ <include name="Numberdresses" />
+ <include name="Listdresses" />
+ <include name="Pricedresses" />
+  <include name="Discountdresses" />
+ </methods>
+ </class>
+</classes>
+</test>
+
+
+<test name="Ecommerce WomensPage">
+<classes>
+
+ <class name="com.qa.tests.WomensPageTest"> 
+ <methods>
+  <include name="Numberdresses" />
+ <include name="Listdresses" />
+ <include name="Pricedresses" />
+  <include name="Discountdresses" />
+</methods>
+</class>
+</classes>
+</test>
+
+<test name="Ecommerce TShirtsPage">
+<classes>
+  <class name="com.qa.tests.TShirtsPageTest"> 
+ <methods>
+   <include name="Numberdresses" />
+ <include name="Listdresses" />
+ <include name="Pricedresses" />
+ </methods>
+ </class>
+</classes>
+</test>
+
+</suite>

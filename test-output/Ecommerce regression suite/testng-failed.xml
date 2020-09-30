@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [Ecommerce regression suite]" parallel="tests">
+  <listeners>
+    <listener class-name="com.qa.testlisteners.ExtentReportListener"/>
+  </listeners>
+  <test thread-count="3" name="Ecommerce DressesPage(failed)" parallel="tests">
+    <classes>
+      <class name="com.qa.tests.DressesPageTest">
+        <methods>
+          <include name="initialize"/>
+          <include name="Numberdresses"/>
+          <include name="teardown"/>
+          <include name="Listdresses"/>
+        </methods>
+      </class> <!-- com.qa.tests.DressesPageTest -->
+    </classes>
+  </test> <!-- Ecommerce DressesPage(failed) -->
+</suite> <!-- Failed suite [Ecommerce regression suite] -->

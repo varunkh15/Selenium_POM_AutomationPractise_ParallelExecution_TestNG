@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Ecommerce_regression_suite">
+              <span class="suite-name border-failed">Ecommerce regression suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Ecommerce_regression_suite">
+                    <span>C:\work\workspace\Ecommerce2\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Ecommerce_regression_suite">
+                    <span class="test-stats">3 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Ecommerce_regression_suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Ecommerce_regression_suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Ecommerce_regression_suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Ecommerce_regression_suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Ecommerce_regression_suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">11 methods, 2 failed,   9 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Ecommerce_regression_suite" class="hide-methods failed suite-Ecommerce_regression_suite"> (hide)</a> <!-- hide-methods failed suite-Ecommerce_regression_suite -->
+                      <a href="#" panel-name="suite-Ecommerce_regression_suite" class="show-methods failed suite-Ecommerce_regression_suite"> (show)</a> <!-- show-methods failed suite-Ecommerce_regression_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Ecommerce_regression_suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Ecommerce_regression_suite" title="com.qa.tests.DressesPageTest" hash-for-method="Listdresses">Listdresses</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Ecommerce_regression_suite" title="com.qa.tests.DressesPageTest" hash-for-method="Numberdresses">Numberdresses</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Ecommerce_regression_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Ecommerce_regression_suite" class="hide-methods passed suite-Ecommerce_regression_suite"> (hide)</a> <!-- hide-methods passed suite-Ecommerce_regression_suite -->
+                      <a href="#" panel-name="suite-Ecommerce_regression_suite" class="show-methods passed suite-Ecommerce_regression_suite"> (show)</a> <!-- show-methods passed suite-Ecommerce_regression_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Ecommerce_regression_suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Ecommerce_regression_suite" title="com.qa.tests.WomensPageTest" hash-for-method="Discountdresses">Discountdresses</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Ecommerce_regression_suite" title="com.qa.tests.DressesPageTest" hash-for-method="Discountdresses">Discountdresses</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Ecommerce_regression_suite" title="com.qa.tests.TShirtsPageTest" hash-for-method="Listdresses">Listdresses</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Ecommerce_regression_suite" title="com.qa.tests.WomensPageTest" hash-for-method="Listdresses">Listdresses</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Ecommerce_regression_suite" title="com.qa.tests.TShirtsPageTest" hash-for-method="Numberdresses">Numberdresses</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Ecommerce_regression_suite" title="com.qa.tests.WomensPageTest" hash-for-method="Numberdresses">Numberdresses</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Ecommerce_regression_suite" title="com.qa.tests.TShirtsPageTest" hash-for-method="Pricedresses">Pricedresses</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Ecommerce_regression_suite" title="com.qa.tests.WomensPageTest" hash-for-method="Pricedresses">Pricedresses</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Ecommerce_regression_suite" title="com.qa.tests.DressesPageTest" hash-for-method="Pricedresses">Pricedresses</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Ecommerce_regression_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Ecommerce_regression_suite" class="panel Ecommerce_regression_suite">
+          <div class="suite-Ecommerce_regression_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.qa.tests.DressesPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Listdresses">
+                  </a> <!-- Listdresses -->
+                  <span class="method-name">Listdresses</span>
+                  <div class="stack-trace">java.lang.AssertionError: lists don&apos;t have the same size expected [5] but found [4]
+	at com.qa.tests.DressesPageTest.Listdresses(DressesPageTest.java:33)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 23 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Numberdresses">
+                  </a> <!-- Numberdresses -->
+                  <span class="method-name">Numberdresses</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [5] but found [1]
+	at com.qa.tests.DressesPageTest.Numberdresses(DressesPageTest.java:24)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Ecommerce_regression_suite-class-failed -->
+          <div class="suite-Ecommerce_regression_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.tests.DressesPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Discountdresses">
+                  </a> <!-- Discountdresses -->
+                  <span class="method-name">Discountdresses</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Pricedresses">
+                  </a> <!-- Pricedresses -->
+                  <span class="method-name">Pricedresses</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Ecommerce_regression_suite-class-passed -->
+          <div class="suite-Ecommerce_regression_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.tests.WomensPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Discountdresses">
+                  </a> <!-- Discountdresses -->
+                  <span class="method-name">Discountdresses</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Listdresses">
+                  </a> <!-- Listdresses -->
+                  <span class="method-name">Listdresses</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Numberdresses">
+                  </a> <!-- Numberdresses -->
+                  <span class="method-name">Numberdresses</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Pricedresses">
+                  </a> <!-- Pricedresses -->
+                  <span class="method-name">Pricedresses</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Ecommerce_regression_suite-class-passed -->
+          <div class="suite-Ecommerce_regression_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.tests.TShirtsPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Listdresses">
+                  </a> <!-- Listdresses -->
+                  <span class="method-name">Listdresses</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Numberdresses">
+                  </a> <!-- Numberdresses -->
+                  <span class="method-name">Numberdresses</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Pricedresses">
+                  </a> <!-- Pricedresses -->
+                  <span class="method-name">Pricedresses</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Ecommerce_regression_suite-class-passed -->
+        </div> <!-- panel Ecommerce_regression_suite -->
+        <div panel-name="test-xml-Ecommerce_regression_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\work\workspace\Ecommerce2\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;3&quot; guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Ecommerce regression suite&quot; parallel=&quot;tests&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.qa.testlisteners.ExtentReportListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;3&quot; name=&quot;Ecommerce DressesPage&quot; parallel=&quot;tests&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.qa.tests.DressesPageTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;Numberdresses&quot;/&gt;
+          &lt;include name=&quot;Listdresses&quot;/&gt;
+          &lt;include name=&quot;Pricedresses&quot;/&gt;
+          &lt;include name=&quot;Discountdresses&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.qa.tests.DressesPageTest --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Ecommerce DressesPage --&gt;
+  &lt;test thread-count=&quot;3&quot; name=&quot;Ecommerce WomensPage&quot; parallel=&quot;tests&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.qa.tests.WomensPageTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;Numberdresses&quot;/&gt;
+          &lt;include name=&quot;Listdresses&quot;/&gt;
+          &lt;include name=&quot;Pricedresses&quot;/&gt;
+          &lt;include name=&quot;Discountdresses&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.qa.tests.WomensPageTest --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Ecommerce WomensPage --&gt;
+  &lt;test thread-count=&quot;3&quot; name=&quot;Ecommerce TShirtsPage&quot; parallel=&quot;tests&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.qa.tests.TShirtsPageTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;Numberdresses&quot;/&gt;
+          &lt;include name=&quot;Listdresses&quot;/&gt;
+          &lt;include name=&quot;Pricedresses&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.qa.tests.TShirtsPageTest --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Ecommerce TShirtsPage --&gt;
+&lt;/suite&gt; &lt;!-- Ecommerce regression suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Ecommerce_regression_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Ecommerce regression suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Ecommerce DressesPage (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Ecommerce WomensPage (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Ecommerce TShirtsPage (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Ecommerce_regression_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Ecommerce regression suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Ecommerce_regression_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Ecommerce regression suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Ecommerce_regression_suite');
+function tableData_Ecommerce_regression_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(11);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'Numberdresses')
+data.setCell(0, 2, 'com.qa.tests.WomensPageTest')
+data.setCell(0, 3, 3322);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'Numberdresses')
+data.setCell(1, 2, 'com.qa.tests.DressesPageTest')
+data.setCell(1, 3, 3074);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'Numberdresses')
+data.setCell(2, 2, 'com.qa.tests.TShirtsPageTest')
+data.setCell(2, 3, 2477);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'Pricedresses')
+data.setCell(3, 2, 'com.qa.tests.WomensPageTest')
+data.setCell(3, 3, 378);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'Listdresses')
+data.setCell(4, 2, 'com.qa.tests.WomensPageTest')
+data.setCell(4, 3, 275);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'Pricedresses')
+data.setCell(5, 2, 'com.qa.tests.DressesPageTest')
+data.setCell(5, 3, 195);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'Listdresses')
+data.setCell(6, 2, 'com.qa.tests.DressesPageTest')
+data.setCell(6, 3, 184);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'Listdresses')
+data.setCell(7, 2, 'com.qa.tests.TShirtsPageTest')
+data.setCell(7, 3, 128);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'Discountdresses')
+data.setCell(8, 2, 'com.qa.tests.DressesPageTest')
+data.setCell(8, 3, 97);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'Discountdresses')
+data.setCell(9, 2, 'com.qa.tests.WomensPageTest')
+data.setCell(9, 3, 87);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'Pricedresses')
+data.setCell(10, 2, 'com.qa.tests.TShirtsPageTest')
+data.setCell(10, 3, 78);
+window.suiteTableData['Ecommerce_regression_suite']= { tableData: data, tableDiv: 'times-div-Ecommerce_regression_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 10 seconds</span>
+              <div id="times-div-Ecommerce_regression_suite">
+              </div> <!-- times-div-Ecommerce_regression_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Ecommerce_regression_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Ecommerce regression suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Ecommerce_regression_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Ecommerce_regression_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.tests.DressesPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initialize</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.tests.TShirtsPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initialize</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.tests.WomensPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initialize</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.tests.TShirtsPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">Numberdresses</span>
+                <span class="method-start">15186 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.tests.WomensPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">Numberdresses</span>
+                <span class="method-start">16459 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.tests.DressesPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Numberdresses</span>
+                <span class="method-start">17669 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.tests.TShirtsPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">Listdresses</span>
+                <span class="method-start">18083 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Pricedresses</span>
+                <span class="method-start">18218 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">18306 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.tests.WomensPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">Listdresses</span>
+                <span class="method-start">20133 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Pricedresses</span>
+                <span class="method-start">20413 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Discountdresses</span>
+                <span class="method-start">21276 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.tests.DressesPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Listdresses</span>
+                <span class="method-start">21276 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.tests.WomensPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">21369 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.tests.DressesPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">Pricedresses</span>
+                <span class="method-start">22006 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Discountdresses</span>
+                <span class="method-start">22206 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">22396 ms</span>
+              </div> <!-- configuration-test after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

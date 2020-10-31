@@ -6,17 +6,19 @@ import com.qa.testdata.Constants;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import com.qa.pages.WomensPage;
 
-public class WomensPageTest extends Base
+public class WomensPageTest extends Base 
 {
 	WebDriver driver;
 	Constants constant = new Constants();
 	WomensPage WomensPage;
 	
 	@Test
-	public void Numberdresses() throws InterruptedException
+	@Parameters("dressesPageTest.numberDresses.jiraTestId")
+	public void Numberdresses(String jiraId) throws InterruptedException
 	{ 
 		WomensPage = new WomensPage(Base.getDriver());
 		List<WebElement> NumofDresses = WomensPage.numberofWomenDresses();
@@ -25,7 +27,8 @@ public class WomensPageTest extends Base
 	}
 	
 	@Test
-	public void Listdresses() throws InterruptedException
+	@Parameters("dressesPageTest.numberDresses.jiraTestId")
+	public void Listdresses(String jiraId) throws InterruptedException
 	{
 		WomensPage = new WomensPage(Base.getDriver());
 		Collections.sort(constant.expectedWomanDressList);
@@ -34,7 +37,8 @@ public class WomensPageTest extends Base
 	}
 	
 	@Test
-	public void Pricedresses() throws InterruptedException
+	@Parameters("dressesPageTest.numberDresses.jiraTestId")
+	public void Pricedresses(String jiraId) throws InterruptedException
 	{
 		WomensPage = new WomensPage(Base.getDriver());
 		Collections.sort(constant.expectedWomanDressPrice);
@@ -43,12 +47,16 @@ public class WomensPageTest extends Base
 	}
 	
 	@Test
-	public void Discountdresses() throws InterruptedException
+	@Parameters("dressesPageTest.numberDresses.jiraTestId")
+	public void Discountdresses(String jiraId) throws InterruptedException
 	{
 		WomensPage = new WomensPage(Base.getDriver());
 		Collections.sort(constant.expectedWomanDressDiscount);
 		List<String> DressDiscount = WomensPage.discountonWomenDress();
 		Assert.assertEquals(constant.expectedWomanDressDiscount,DressDiscount);
 	}
+	
+	
+	
 
 }

@@ -2,6 +2,7 @@ package com.qa.pages;
 import java.io.File;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
+
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -13,16 +14,20 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
 import com.qa.testdata.Constants;
+import com.qa.utils.ApplicationProperties;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class Base{
+public  class Base{
 	public static WebDriver driver;
 	public static ThreadLocal<WebDriver> tlDriver = new ThreadLocal<WebDriver>();
-
+	public ApplicationProperties properties;
 	@BeforeTest
 	public void initialize() 
 	{
 		driver = initializeDriver();
+		properties = new ApplicationProperties();
+		properties.init();
 	}
 
 	@AfterTest
@@ -30,6 +35,7 @@ public class Base{
 		getDriver().close();
 		getDriver().quit();
 	}
+	
 	/*
 	public static WebDriver getDriver(){
 		if(driver!=null)

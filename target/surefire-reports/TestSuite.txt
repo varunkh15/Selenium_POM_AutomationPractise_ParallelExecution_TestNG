@@ -1,0 +1,13 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 3, Errors: 0, Skipped: 3, Time elapsed: 30.066 s <<< FAILURE! - in TestSuite
+initialize(com.qa.tests.WomensPageTest)  Time elapsed: 20.943 s  <<< FAILURE!
+java.lang.NullPointerException
+
+initialize(com.qa.tests.TShirtsPageTest)  Time elapsed: 20.946 s  <<< FAILURE!
+java.lang.NullPointerException
+
+initialize(com.qa.tests.DressesPageTest)  Time elapsed: 20.947 s  <<< FAILURE!
+java.lang.NullPointerException
+

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Ecommerce_regression_suite" class="panel Ecommerce_regression_suite">
+        </div> <!-- panel Ecommerce_regression_suite -->
+        <div panel-name="test-xml-Ecommerce_regression_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\work\workspace\Ecommerce2\src\test\resources\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;3&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Ecommerce regression suite&quot; parallel=&quot;tests&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.qa.testlisteners.ExtentReportListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;3&quot; verbose=&quot;0&quot; name=&quot;Ecommerce DressesPage&quot; parallel=&quot;tests&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.qa.tests.DressesPageTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;Numberdresses&quot;/&gt;
+          &lt;include name=&quot;Listdresses&quot;/&gt;
+          &lt;include name=&quot;Pricedresses&quot;/&gt;
+          &lt;include name=&quot;Discountdresses&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.qa.tests.DressesPageTest --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Ecommerce DressesPage --&gt;
+  &lt;test thread-count=&quot;3&quot; verbose=&quot;0&quot; name=&quot;Ecommerce WomensPage&quot; parallel=&quot;tests&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.qa.tests.WomensPageTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;Numberdresses&quot;/&gt;
+          &lt;include name=&quot;Listdresses&quot;/&gt;
+          &lt;include name=&quot;Pricedresses&quot;/&gt;
+          &lt;include name=&quot;Discountdresses&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.qa.tests.WomensPageTest --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Ecommerce WomensPage --&gt;
+  &lt;test thread-count=&quot;3&quot; verbose=&quot;0&quot; name=&quot;Ecommerce TShirtsPage&quot; parallel=&quot;tests&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.qa.tests.TShirtsPageTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;Numberdresses&quot;/&gt;
+          &lt;include name=&quot;Listdresses&quot;/&gt;
+          &lt;include name=&quot;Pricedresses&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.qa.tests.TShirtsPageTest --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Ecommerce TShirtsPage --&gt;
+&lt;/suite&gt; &lt;!-- Ecommerce regression suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Ecommerce_regression_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Ecommerce regression suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Ecommerce DressesPage (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Ecommerce WomensPage (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Ecommerce TShirtsPage (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Ecommerce_regression_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Ecommerce regression suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Ecommerce_regression_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Ecommerce regression suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Ecommerce_regression_suite');
+function tableData_Ecommerce_regression_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(0);
+window.suiteTableData['Ecommerce_regression_suite']= { tableData: data, tableDiv: 'times-div-Ecommerce_regression_suite'}
+return data;
+}
+              </script>
+              <div id="times-div-Ecommerce_regression_suite">
+              </div> <!-- times-div-Ecommerce_regression_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Ecommerce_regression_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Ecommerce regression suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Ecommerce_regression_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">1 ignored method</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.qa.tests.DressesPageTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">numberDresses</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Ecommerce_regression_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.tests.DressesPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">initialize</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.tests.TShirtsPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">initialize</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.tests.WomensPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">initialize</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

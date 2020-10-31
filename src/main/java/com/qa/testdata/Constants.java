@@ -14,6 +14,9 @@ public class Constants {
     public ArrayList<String> expectedWomanDressDiscount = new ArrayList<String>();
     public ArrayList<String> expectedtshirtList = new ArrayList<String>();
    	public ArrayList<String> expectedtshirtPrice = new ArrayList<String>();	
+   	public ArrayList<String> jiraTestcaseid = new ArrayList<String>();	
+   	
+   	
 	public Constants()
 	{
 	expectedDressList.add("Printed Dress");
@@ -46,6 +49,17 @@ public class Constants {
 	expectedWomanDressDiscount.add("-20%");
 	expectedtshirtList.add("Faded Short Sleeve T-shirts");
 	expectedtshirtPrice.add("$16.51");
+	jiraTestcaseid.add("MRA-123");
+	jiraTestcaseid.add("MRA-124");
+	jiraTestcaseid.add("MRA-125");
+	jiraTestcaseid.add("MRA-126");
+	jiraTestcaseid.add("MRA-127");
+	jiraTestcaseid.add("MRA-128");
+	jiraTestcaseid.add("MRA-129");
+	jiraTestcaseid.add("MRA-130");
+	jiraTestcaseid.add("MRA-131");
+	jiraTestcaseid.add("MRA-132");
+	jiraTestcaseid.add("MRA-133");
 	
 	}
 }

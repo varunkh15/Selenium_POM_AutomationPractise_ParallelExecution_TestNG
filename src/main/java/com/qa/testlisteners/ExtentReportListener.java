@@ -19,15 +19,15 @@ import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.ChartLocation;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 import com.qa.pages.Base;
+import com.qa.pages.DressesPage;
 
 public class ExtentReportListener extends Base implements ITestListener {
 
 	private static final String OUTPUT_FOLDER = "./build/";
 	private static final String FILE_NAME = "TestExecutionReport.html";
-
 	private static ExtentReports extent = init();
 	public static ThreadLocal<ExtentTest> test = new ThreadLocal<ExtentTest>();
-
+	DressesPage Dress = new DressesPage(driver);
 	private static ExtentReports init() {
 
 		Path path = Paths.get(OUTPUT_FOLDER);
@@ -43,7 +43,7 @@ public class ExtentReportListener extends Base implements ITestListener {
 		ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter(OUTPUT_FOLDER + FILE_NAME);
 		htmlReporter.config().setDocumentTitle("Automation Test Results");
 		htmlReporter.config().setReportName("Automation Test Results");
-		htmlReporter.config().setTestViewChartLocation(ChartLocation.TOP);
+		htmlReporter.config().setTestViewChartLocation(ChartLocation.BOTTOM);
 		htmlReporter.config().setTheme(Theme.STANDARD);
 
 		extent = new ExtentReports();
@@ -55,6 +55,7 @@ public class ExtentReportListener extends Base implements ITestListener {
 
 	public synchronized void onStart(ITestContext context) {
 		//System.out.println("Test Suite started!");
+		
 	}
 
 	public synchronized void onFinish(ITestContext context) {
@@ -64,14 +65,20 @@ public class ExtentReportListener extends Base implements ITestListener {
 	}
 
 	public synchronized void onTestStart(ITestResult result) {
-		String methodName = result.getMethod().getMethodName();
+		//String methodName = result.getMethod().getMethodName();
+		System.out.println("parameter length"+ result.getParameters().length);
+		Object[] params = result.getParameters();
+//		BaseTestInterface baseTestInterface  =(BaseTestInterface) result.getInstance();
+//		System.out.println("Execute Jira Id"+ baseTestInterface.getJiraId());
+	
+		String methodName = params!=null && params.length>0?(String)params[0]+"-":"NA-";
 		String qualifiedName = result.getMethod().getQualifiedName();
 		int last = qualifiedName.lastIndexOf(".");
 		int mid = qualifiedName.substring(0, last).lastIndexOf(".");
 		String className = qualifiedName.substring(mid + 1, last);
 
 	//	System.out.println(methodName + " started!");
-		ExtentTest extentTest = extent.createTest(result.getMethod().getMethodName(),
+		ExtentTest extentTest = extent.createTest(methodName+result.getMethod().getMethodName(),
 				result.getMethod().getDescription());
 
 		extentTest.assignCategory(result.getTestContext().getSuite().getName());

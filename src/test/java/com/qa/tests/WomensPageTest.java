@@ -17,8 +17,8 @@ public class WomensPageTest extends Base
 	WomensPage WomensPage;
 	
 	@Test
-	@Parameters("dressesPageTest.numberDresses.jiraTestId")
-	public void Numberdresses(String jiraId) throws InterruptedException
+	@Parameters({"dressesPageTest.numberDresses.jiraTestId", "dressesPageTest.numberDresses.desc" })
+	public void Numberdresses(String jiraId, String description) throws InterruptedException
 	{ 
 		WomensPage = new WomensPage(Base.getDriver());
 		List<WebElement> NumofDresses = WomensPage.numberofWomenDresses();

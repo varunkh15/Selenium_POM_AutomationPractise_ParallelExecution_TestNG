@@ -3,6 +3,7 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Ecommerce regression suite]" parallel="tests">
   <parameter name="DressesPageTest.numberDresses.enable" value="false"/>
   <parameter name="dressesPageTest.listdresses.jiraTestId" value="STORY-124"/>
+  <parameter name="dressesPageTest.numberDresses.desc" value="This is my description"/>
   <parameter name="dressesPageTest.numberDresses.jiraTestId" value="STORY-123"/>
   <parameter name="dressesPageTest.numberOfDress.jiraTestId" value="STORY-125"/>
   <parameter name="WomensPageTest.Pricedresses.enable" value="false"/>

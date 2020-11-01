@@ -71,15 +71,15 @@ public class ExtentReportListener extends Base implements ITestListener {
 //		BaseTestInterface baseTestInterface  =(BaseTestInterface) result.getInstance();
 //		System.out.println("Execute Jira Id"+ baseTestInterface.getJiraId());
 	
-		String methodName = params!=null && params.length>0?(String)params[0]+"-":"NA-";
+		String jiraTestId = params!=null && params.length>0?(String)params[0]+"-":"";
+		String methodDescription = params!=null && params.length>1?(String)params[1]: result.getMethod().getMethodName();
 		String qualifiedName = result.getMethod().getQualifiedName();
 		int last = qualifiedName.lastIndexOf(".");
 		int mid = qualifiedName.substring(0, last).lastIndexOf(".");
 		String className = qualifiedName.substring(mid + 1, last);
 
 	//	System.out.println(methodName + " started!");
-		ExtentTest extentTest = extent.createTest(methodName+result.getMethod().getMethodName(),
-				result.getMethod().getDescription());
+		ExtentTest extentTest = extent.createTest(jiraTestId+methodDescription);
 
 		extentTest.assignCategory(result.getTestContext().getSuite().getName());
 		/*

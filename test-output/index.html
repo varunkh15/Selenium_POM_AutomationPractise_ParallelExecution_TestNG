@@ -131,22 +131,22 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Ecommerce_regression_suite" title="com.qa.tests.TShirtsPageTest" hash-for-method="Listdresses(STORY-123)">Listdresses(STORY-123)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Ecommerce_regression_suite" title="com.qa.tests.WomensPageTest" hash-for-method="Listdresses(STORY-123)">Listdresses(STORY-123)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Ecommerce_regression_suite" title="com.qa.tests.TShirtsPageTest" hash-for-method="Numberdresses(STORY-123)">Numberdresses(STORY-123)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Ecommerce_regression_suite" title="com.qa.tests.TShirtsPageTest" hash-for-method="Listdresses(STORY-123)">Listdresses(STORY-123)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Ecommerce_regression_suite" title="com.qa.tests.WomensPageTest" hash-for-method="Numberdresses(STORY-123)">Numberdresses(STORY-123)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Ecommerce_regression_suite" title="com.qa.tests.WomensPageTest" hash-for-method="Numberdresses(STORY-123, This is my description)">Numberdresses(STORY-123, This is my description)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Ecommerce_regression_suite" title="com.qa.tests.TShirtsPageTest" hash-for-method="Numberdresses(STORY-123)">Numberdresses(STORY-123)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -179,7 +179,7 @@
                   <span class="method-name">Discountdresses</span>
                   <span class="parameters">(STORY-123)</span>
                   <div class="stack-trace">java.lang.AssertionError: lists don&apos;t have the same size expected [2] but found [0]
-	at com.qa.tests.DressesPageTest.Discountdresses(DressesPageTest.java:66)
+	at com.qa.tests.DressesPageTest.Discountdresses(DressesPageTest.java:62)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
@@ -195,7 +195,7 @@
                   <span class="method-name">Listdresses</span>
                   <span class="parameters">(STORY-123)</span>
                   <div class="stack-trace">java.lang.AssertionError: lists don&apos;t have the same size expected [5] but found [0]
-	at com.qa.tests.DressesPageTest.Listdresses(DressesPageTest.java:45)
+	at com.qa.tests.DressesPageTest.Listdresses(DressesPageTest.java:42)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
@@ -211,7 +211,7 @@
                   <span class="method-name">Pricedresses</span>
                   <span class="parameters">(STORY-123)</span>
                   <div class="stack-trace">java.lang.AssertionError: lists don&apos;t have the same size expected [5] but found [0]
-	at com.qa.tests.DressesPageTest.Pricedresses(DressesPageTest.java:56)
+	at com.qa.tests.DressesPageTest.Pricedresses(DressesPageTest.java:52)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
@@ -246,10 +246,10 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="Numberdresses(STORY-123)">
-                  </a> <!-- Numberdresses(STORY-123) -->
+                  <a name="Numberdresses(STORY-123, This is my description)">
+                  </a> <!-- Numberdresses(STORY-123, This is my description) -->
                   <span class="method-name">Numberdresses</span>
-                  <span class="parameters">(STORY-123)</span>
+                  <span class="parameters">(STORY-123, This is my description)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -298,6 +298,7 @@
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Ecommerce regression suite&quot; parallel=&quot;tests&quot;&gt;
   &lt;parameter name=&quot;DressesPageTest.numberDresses.enable&quot; value=&quot;false&quot;/&gt;
   &lt;parameter name=&quot;dressesPageTest.listdresses.jiraTestId&quot; value=&quot;STORY-124&quot;/&gt;
+  &lt;parameter name=&quot;dressesPageTest.numberDresses.desc&quot; value=&quot;This is my description&quot;/&gt;
   &lt;parameter name=&quot;dressesPageTest.numberDresses.jiraTestId&quot; value=&quot;STORY-123&quot;/&gt;
   &lt;parameter name=&quot;dressesPageTest.numberOfDress.jiraTestId&quot; value=&quot;STORY-125&quot;/&gt;
   &lt;parameter name=&quot;WomensPageTest.Pricedresses.enable&quot; value=&quot;false&quot;/&gt;
@@ -386,46 +387,46 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(9);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'Pricedresses')
+data.setCell(0, 1, 'Discountdresses')
 data.setCell(0, 2, 'com.qa.tests.DressesPageTest')
-data.setCell(0, 3, 10244);
+data.setCell(0, 3, 10076);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'Listdresses')
+data.setCell(1, 1, 'Pricedresses')
 data.setCell(1, 2, 'com.qa.tests.DressesPageTest')
-data.setCell(1, 3, 10110);
+data.setCell(1, 3, 10075);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'Discountdresses')
+data.setCell(2, 1, 'Listdresses')
 data.setCell(2, 2, 'com.qa.tests.DressesPageTest')
-data.setCell(2, 3, 10063);
+data.setCell(2, 3, 10067);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'Numberdresses')
 data.setCell(3, 2, 'com.qa.tests.WomensPageTest')
-data.setCell(3, 3, 5009);
+data.setCell(3, 3, 4293);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'Numberdresses')
 data.setCell(4, 2, 'com.qa.tests.TShirtsPageTest')
-data.setCell(4, 3, 4095);
+data.setCell(4, 3, 3564);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'Listdresses')
 data.setCell(5, 2, 'com.qa.tests.WomensPageTest')
-data.setCell(5, 3, 464);
+data.setCell(5, 3, 328);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'Listdresses')
-data.setCell(6, 2, 'com.qa.tests.TShirtsPageTest')
-data.setCell(6, 3, 211);
+data.setCell(6, 1, 'Discountdresses')
+data.setCell(6, 2, 'com.qa.tests.WomensPageTest')
+data.setCell(6, 3, 131);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'Discountdresses')
-data.setCell(7, 2, 'com.qa.tests.WomensPageTest')
-data.setCell(7, 3, 192);
+data.setCell(7, 1, 'Pricedresses')
+data.setCell(7, 2, 'com.qa.tests.TShirtsPageTest')
+data.setCell(7, 3, 100);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'Pricedresses')
+data.setCell(8, 1, 'Listdresses')
 data.setCell(8, 2, 'com.qa.tests.TShirtsPageTest')
-data.setCell(8, 3, 168);
+data.setCell(8, 3, 98);
 window.suiteTableData['Ecommerce_regression_suite']= { tableData: data, tableDiv: 'times-div-Ecommerce_regression_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 40 seconds</span>
+              <span class="suite-total-time">Total running time: 38 seconds</span>
               <div id="times-div-Ecommerce_regression_suite">
               </div> <!-- times-div-Ecommerce_regression_suite -->
             </div> <!-- times-div -->
@@ -444,16 +445,16 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">com.qa.tests.WomensPageTest</span>
+              <span class="ignored-class-name">com.qa.tests.DressesPageTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">Pricedresses</span>
+                <span class="ignored-method-name">numberDresses</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
-              <span class="ignored-class-name">com.qa.tests.DressesPageTest</span>
+              <span class="ignored-class-name">com.qa.tests.WomensPageTest</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">numberDresses</span>
+                <span class="ignored-method-name">Pricedresses</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -472,24 +473,31 @@ return data;
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.qa.tests.DressesPageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <span class="method-name">initialize</span>
-                <span class="method-start">726 ms</span>
-              </div> <!-- configuration-test before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
               <div class="chronological-class-name">com.qa.tests.WomensPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">initialize</span>
-                <span class="method-start">727 ms</span>
+                <span class="method-start">565 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.tests.DressesPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">initialize</span>
+                <span class="method-start">568 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.tests.TShirtsPageTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">Numberdresses(STORY-123)</span>
-                <span class="method-start">20374 ms</span>
+                <span class="method-start">15370 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qa.tests.WomensPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">Numberdresses(STORY-123, This is my description)</span>
+                <span class="method-start">15516 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
@@ -498,44 +506,37 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">Listdresses(STORY-123)</span>
-                <span class="method-start">20783 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.qa.tests.WomensPageTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">Numberdresses(STORY-123)</span>
-                <span class="method-start">21026 ms</span>
+                <span class="method-start">15659 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.tests.TShirtsPageTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">Listdresses(STORY-123)</span>
-                <span class="method-start">24504 ms</span>
+                <span class="method-start">18957 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Pricedresses(STORY-123)</span>
-                <span class="method-start">24727 ms</span>
+                <span class="method-start">19063 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">24913 ms</span>
+                <span class="method-start">19172 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.tests.WomensPageTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">Listdresses(STORY-123)</span>
-                <span class="method-start">26048 ms</span>
+                <span class="method-start">19819 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Discountdresses(STORY-123)</span>
-                <span class="method-start">26524 ms</span>
+                <span class="method-start">20153 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">27705 ms</span>
+                <span class="method-start">20290 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
@@ -544,17 +545,17 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">Pricedresses(STORY-123)</span>
-                <span class="method-start">32626 ms</span>
+                <span class="method-start">26623 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">Discountdresses(STORY-123)</span>
-                <span class="method-start">45020 ms</span>
+                <span class="method-start">37523 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">56699 ms</span>
+                <span class="method-start">48433 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

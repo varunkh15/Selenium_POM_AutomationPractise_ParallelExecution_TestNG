@@ -1,28 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Ecommerce regression suite]" parallel="tests">
-  <parameter name="DressesPageTest.numberDresses.enable" value="false"/>
-  <parameter name="dressesPageTest.listdresses.jiraTestId" value="STORY-124"/>
-  <parameter name="dressesPageTest.numberDresses.desc" value="This is my description"/>
-  <parameter name="dressesPageTest.numberDresses.jiraTestId" value="STORY-123"/>
-  <parameter name="dressesPageTest.numberOfDress.jiraTestId" value="STORY-125"/>
-  <parameter name="WomensPageTest.Pricedresses.enable" value="false"/>
+  <parameter name="TShirtsPageTest.numberDresses.jiraTestId" value="JIRA-123"/>
+  <parameter name="TShirtsPageTest.Pricedresses.enable" value="true"/>
+  <parameter name="DressesPageTest.Discountdresses.desc" value="discount given"/>
+  <parameter name="DressesPageTest.Pricedresses.desc" value="payment is completed"/>
+  <parameter name="TShirtsPageTest.Pricedresses.jiraTestId" value="JIRA-789"/>
+  <parameter name="WomensPageTest.Listdresses.jiraTestId" value="JIRA-456"/>
+  <parameter name="WomensPageTest.Listdresses.desc" value="check value in cart"/>
+  <parameter name="WomensPageTest.Discountdresses.jiraTestId" value="JIRA-12344"/>
+  <parameter name="DressesPageTest.Listdresses.desc" value="check value in cart"/>
+  <parameter name="WomensPageTest.numberDresses.enable" value="true"/>
+  <parameter name="WomensPageTest.numberDresses.desc" value="dresses in the basket"/>
+  <parameter name="DressesPageTest.numberDresses.desc" value="dresses in the basket"/>
+  <parameter name="WomensPageTest.Pricedresses.jiraTestId" value="JIRA-789"/>
+  <parameter name="WomensPageTest.Pricedresses.desc" value="payment is completed"/>
+  <parameter name="WomensPageTest.Discountdresses.enable" value="true"/>
+  <parameter name="WomensPageTest.Listdresses.enable" value="false"/>
+  <parameter name="TShirtsPageTest.Listdresses.jiraTestId" value="JIRA-456"/>
+  <parameter name="DressesPageTest.numberDresses.jiraTestId" value="JIRA-123"/>
+  <parameter name="DressesPageTest.Pricedresses.enable" value="true"/>
+  <parameter name="TShirtsPageTest.Listdresses.desc" value="check value in cart"/>
+  <parameter name="DressesPageTest.Pricedresses.jiraTestId" value="JIRA-789"/>
+  <parameter name="WomensPageTest.Discountdresses.desc" value="dresses in the basket"/>
+  <parameter name="DressesPageTest.Listdresses.enable" value="false"/>
+  <parameter name="TShirtsPageTest.Pricedresses.desc" value="payment is completed"/>
+  <parameter name="DressesPageTest.Discountdresses.enable" value="false"/>
+  <parameter name="DressesPageTest.Listdresses.jiraTestId" value="JIRA-456"/>
+  <parameter name="TShirtsPageTest.numberDresses.desc" value="dresses in the basket"/>
+  <parameter name="DressesPageTest.numberDresses.enable" value="true"/>
+  <parameter name="WomensPageTest.numberDresses.jiraTestId" value="JIRA-123"/>
+  <parameter name="TShirtsPageTest.numberDresses.enable" value="true"/>
+  <parameter name="TShirtsPageTest.Listdresses.enable" value="false"/>
+  <parameter name="DressesPageTest.Discountdresses.jiraTestId" value="JIRA-910"/>
+  <parameter name="WomensPageTest.Pricedresses.enable" value="true"/>
   <listeners>
     <listener class-name="com.qa.testlisteners.ExtentReportListener"/>
     <listener class-name="com.qa.transformers.DisableTransformer"/>
     <listener class-name="com.qa.testlisteners.PropertyInjectorListener"/>
   </listeners>
-  <test thread-count="5" name="Ecommerce DressesPage(failed)" parallel="tests">
+  <test thread-count="5" name="Ecommerce WomensPage(failed)" parallel="tests">
     <classes>
-      <class name="com.qa.tests.DressesPageTest">
+      <class name="com.qa.tests.WomensPageTest">
         <methods>
           <include name="initialize"/>
-          <include name="Discountdresses" invocation-numbers="0"/>
           <include name="teardown"/>
-          <include name="Pricedresses" invocation-numbers="0"/>
-          <include name="Listdresses" invocation-numbers="0"/>
+          <include name="Discountdresses"/>
         </methods>
-      </class> <!-- com.qa.tests.DressesPageTest -->
+      </class> <!-- com.qa.tests.WomensPageTest -->
     </classes>
-  </test> <!-- Ecommerce DressesPage(failed) -->
+  </test> <!-- Ecommerce WomensPage(failed) -->
 </suite> <!-- Failed suite [Ecommerce regression suite] -->

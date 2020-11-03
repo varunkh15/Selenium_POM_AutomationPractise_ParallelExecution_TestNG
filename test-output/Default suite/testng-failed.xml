@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="com.qa.tests.TShirtsPageTest">
+        <methods>
+          <include name="initialize"/>
+          <include name="Numberdresses"/>
+          <include name="Listdresses"/>
+          <include name="teardown"/>
+          <include name="Pricedresses"/>
+        </methods>
+      </class> <!-- com.qa.tests.TShirtsPageTest -->
+      <class name="com.qa.tests.WomensPageTest">
+        <methods>
+          <include name="initialize"/>
+          <include name="Pricedresses"/>
+          <include name="teardown"/>
+          <include name="Listdresses"/>
+          <include name="Discountdresses"/>
+          <include name="Numberdresses"/>
+        </methods>
+      </class> <!-- com.qa.tests.WomensPageTest -->
+      <class name="com.qa.tests.DressesPageTest">
+        <methods>
+          <include name="initialize"/>
+          <include name="Discountdresses"/>
+          <include name="teardown"/>
+          <include name="numberDresses"/>
+          <include name="Pricedresses"/>
+          <include name="Listdresses"/>
+        </methods>
+      </class> <!-- com.qa.tests.DressesPageTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

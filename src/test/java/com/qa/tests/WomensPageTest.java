@@ -17,7 +17,7 @@ public class WomensPageTest extends Base
 	WomensPage WomensPage;
 	
 	@Test
-	@Parameters({"dressesPageTest.numberDresses.jiraTestId", "dressesPageTest.numberDresses.desc" })
+	@Parameters({"WomensPageTest.numberDresses.jiraTestId", "WomensPageTest.numberDresses.desc" })
 	public void Numberdresses(String jiraId, String description) throws InterruptedException
 	{ 
 		WomensPage = new WomensPage(Base.getDriver());
@@ -27,7 +27,7 @@ public class WomensPageTest extends Base
 	}
 	
 	@Test
-	@Parameters("dressesPageTest.numberDresses.jiraTestId")
+	@Parameters("WomensPageTest.Listdresses.jiraTestId")
 	public void Listdresses(String jiraId) throws InterruptedException
 	{
 		WomensPage = new WomensPage(Base.getDriver());
@@ -37,7 +37,7 @@ public class WomensPageTest extends Base
 	}
 	
 	@Test
-	@Parameters("dressesPageTest.numberDresses.jiraTestId")
+	@Parameters("WomensPageTest.Pricedresses.jiraTestId")
 	public void Pricedresses(String jiraId) throws InterruptedException
 	{
 		WomensPage = new WomensPage(Base.getDriver());
@@ -47,7 +47,7 @@ public class WomensPageTest extends Base
 	}
 	
 	@Test
-	@Parameters("dressesPageTest.numberDresses.jiraTestId")
+	@Parameters("WomensPageTest.Discountdresses.jiraTestId")
 	public void Discountdresses(String jiraId) throws InterruptedException
 	{
 		WomensPage = new WomensPage(Base.getDriver());

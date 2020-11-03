@@ -18,8 +18,8 @@ public class TShirtsPageTest extends Base
 	Constants constant = new Constants();
 	TShirtsPage tshirtpage;
 	
-	@Test
-	@Parameters("dressesPageTest.numberDresses.jiraTestId")
+	@Test()
+	@Parameters("TShirtsPageTest.numberDresses.jiraTestId")
 	public void Numberdresses(String jiraId) throws InterruptedException
 	{ 
 		System.out.println("Execution Jira Id:"+jiraId);
@@ -30,7 +30,7 @@ public class TShirtsPageTest extends Base
 	}
 	
 	@Test
-	@Parameters("dressesPageTest.numberDresses.jiraTestId")
+	@Parameters("TShirtsPageTest.Listdresses.jiraTestId")
 	public void Listdresses(String jiraId) throws InterruptedException
 	{
 		tshirtpage = new TShirtsPage(Base.getDriver());
@@ -40,7 +40,7 @@ public class TShirtsPageTest extends Base
 	}
 	
 	@Test
-	@Parameters("dressesPageTest.numberDresses.jiraTestId")
+	@Parameters("TShirtsPageTest.Pricedresses.jiraTestId")
 	public void Pricedresses(String jiraId) throws InterruptedException
 	{
 		tshirtpage = new TShirtsPage(Base.getDriver());

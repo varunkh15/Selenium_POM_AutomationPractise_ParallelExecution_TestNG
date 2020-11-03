@@ -19,20 +19,20 @@ public class DressesPageTest extends Base {
 	DressesPage dressesPage;
 
 	@Test
-	@Parameters({ "dressesPageTest.numberDresses.jiraTestId", "dressesPageTest.numberDresses.desc" })
+	@Parameters({ "DressesPageTest.numberDresses.jiraTestId", "DressesPageTest.numberDresses.desc" })
 	public void numberDresses(String jiraId, String description) throws InterruptedException {
 		dressesPage = new DressesPage(Base.getDriver());
 		// jiraTestId = "NUMBER-dress-101";
-//		jiraTestId = properties.getProperty("dressesPageTest.numberDresses.jiraTestId");
+//		jiraTestId = properties.getProperty("DressesPageTest.numberDresses.jiraTestId");
 		// System.out.println("Jira test
-		// Id:"+properties.getProperty("dressesPageTest.numberDresses.jiraTestId"));
+		// Id:"+properties.getProperty("DressesPageTest.numberDresses.jiraTestId"));
 		List<WebElement> numofDresses = dressesPage.numberofDresses();
 		System.out.println("Number of dresses present on page : " + numofDresses.size());
 		Assert.assertEquals(numofDresses.size(), 5);
 	}
 
 	@Test
-	@Parameters("dressesPageTest.numberDresses.jiraTestId")
+	@Parameters("DressesPageTest.Listdresses.jiraTestId")
 	public void Listdresses(String jiraId) throws InterruptedException {
 		dressesPage = new DressesPage(Base.getDriver());
 		// jiraTestId = "List-dress-101";
@@ -43,7 +43,7 @@ public class DressesPageTest extends Base {
 	}
 
 	@Test
-	@Parameters("dressesPageTest.numberDresses.jiraTestId")
+	@Parameters("DressesPageTest.Pricedresses.jiraTestId")
 	public void Pricedresses(String jiraId) throws InterruptedException {
 		// jiraTestId = "Price-dress-101";
 		dressesPage = new DressesPage(Base.getDriver());
@@ -53,7 +53,7 @@ public class DressesPageTest extends Base {
 	}
 
 	@Test
-	@Parameters("dressesPageTest.numberDresses.jiraTestId")
+	@Parameters("DressesPageTest.Discountdresses.jiraTestId")
 	public void Discountdresses(String jiraId) throws InterruptedException {
 //		jiraTestId = "Discount-dress-101";
 		dressesPage = new DressesPage(Base.getDriver());
@@ -61,5 +61,8 @@ public class DressesPageTest extends Base {
 		List<String> DressDiscount = dressesPage.discountonDress();
 		Assert.assertEquals(DressDiscount, constant.expectedDressDiscount);
 	}
+	
+	
+	
 
 }
